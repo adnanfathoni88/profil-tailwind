@@ -12,8 +12,8 @@
     <title>Tailwind</title>
 </head>
 
-<body class="">
-    <div class="bg-sky-950 flex justify-center content-center h-full">
+<body>
+    <section class="bg-sky-950 flex justify-center content-center h-full text-white">
         <div class=" text-center w-3/4 my-8">
             <div class="card-body">
                 <h1 class=" text-transparent text-5xl font-bold bg-gradient-to-r from-sky-600 to-sky-300 bg-clip-text">
@@ -27,11 +27,58 @@
                 </p>
             </div>
             <div class="card-footer py-3">
-                <button class=" bg-gradient-to-r from-sky-500 to-sky-300 px-8 py-3 rounded-lg ">
-                    <p class="text-white">Get Started</p>
-                </button>
+                <button
+                    class="text-white text-semibold bg-sky-500 px-8 py-3 rounded-lg hover:bg-sky-600 active:bg-sky-700">Get
+                    Started</button>
             </div>
         </div>
+    </section>
+
+    <section class="card">
+        <div class="first-letter:max-w-lg border border-slate-200 rounded-lg shadow-lg p-5 m-6">
+            <h1><b>CARD</b></h1>
+            <hr>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum eum vero commodi in iusto magnam quaerat
+            placeat voluptate exercitationem similique sed facere, ad voluptatem magni voluptatum iure quis dolorum
+            possimus?
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto px-4">
+            <h1><b>POSISTION</b></h1>
+            <div class="relative max-w-full bg-sky-400 h-40">
+                <div class="absolute bg-sky-800 h-10 inset-x-0 bottom-0 z-40"></div>
+                <div class="absolute bg-sky-700 h-20 inset-x-0 bottom-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-4 mt-4 mb-4">
+            <h1><strong>FLEX</strong></h1>
+            <div class="flex flex-row flex-wrap">
+                <div class="bg-sky-900 h-10 w-80 flex-auto"></div>
+                <div class="bg-sky-800 h-10 w-32 flex-auto"></div>
+                <div class="bg-sky-700 h-10 w-32 flex-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-4 mb-4">
+            <h1><strong>GRID</strong></h1>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="bg-sky-700 h-10"></div>
+                <div class="col-span-2 bg-sky-500 h-10"></div>
+                <div class="bg-sky-700 h-10"></div>
+                <div class="bg-sky-700 h-10"></div>
+                <div class="bg-sky-700 h-10"></div>
+                <div class="bg-sky-700 h-10"></div>
+                <div class="col-start-2 col-end-4 bg-rose-700 h-10"></div>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
