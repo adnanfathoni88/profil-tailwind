@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,73 @@
     <!-- font inter -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="/public/css/style.css">
+    <!--font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
     <title>Tailwind</title>
 </head>
 
 <body>
-    <section class="bg-sky-950 flex justify-center content-center h-full text-white">
+    <section>
+        <div class="mb-40 grid grid-cols-2 gap-2 p-4 md:grid-cols-4 overflow-hidden">
+
+            <div
+                class="h-20 rounded-lg shadow-md md:h-40 group relative overflow-hidden hover:scale-95 transition-all duration-200">
+                <div class="w-full h-full bg-cover bg-bottom absolute group-hover:scale-110 group-hover:rotate-3 transition-transform duration-200"
+                    style="background-image: url('./img/foot.jpg');">
+                </div>
+            </div>
+            <div class="h-20 bg-sky-400 rounded-lg shadow-md md:h-40 hover:-translate-y-1 transition-all duration-300">
+            </div>
+            <div class="h-20 bg-sky-400 rounded-lg shadow-md md:h-40"></div>
+            <div class="h-20 bg-sky-400 rounded-lg shadow-md md:h-40"></div>
+            <div class="h-20 bg-sky-400 rounded-lg shadow-md md:h-40"></div>
+            <div class="h-20 bg-sky-400 rounded-lg shadow-md md:h-40"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-6 my-6 mx-auto max-w-md md:max-w-5xl md:flex lg:block">
+            <div class="md:mx-6 lg:mx-0 mt-4">
+                <img class="object-cover h-80 block rounded-xl shadow-lg md:w-full md:h-full md:object-bottom md:h-60 md:w-3/4 lg:w-full lg:h-80 lg:w-full"
+                    src="./img/foot.jpg" alt="">
+            </div>
+            <div class="mt-4">
+                <h3 class="text-4xl font-bold">Adnan Dev</h3>
+                <p class="mt-2 text-sm sm:text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Beatae
+                    doloremque
+                    asperiores, exaut dolores quisquam quo! Porro, aliquam illo, reiciendis quia similique molestiae
+                    accusantium, magnam nisi
+                    laudantium expedita officiis culpa!</p>
+                <div>
+                    <a class="bg-sky-400 py-2 px-4 inline-block rounded-xl text-white  mt-3" href="">More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-10 px-4 justify-center gap-6 flex-wrap sm:flex">
+            <div class="rounded-lg shadow-md p-4 mb-2 w-full sm:w-64 md:w-72 lg:w-96">
+                <p>card 1</p>
+            </div>
+            <div class="rounded-lg shadow-md p-4 mb-2 w-full sm:w-64 md:w-72 lg:w-96">
+                <p>card 2</p>
+            </div>
+            <div class="rounded-lg shadow-md p-4 mb-2 w-full sm:w-64 md:w-72 lg:w-96">
+                <p>card 3</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="bg-sky-950 flex justify-center content-center h-full text-white mt-6">
         <div class=" text-center w-3/4 my-8">
             <div class="card-body">
                 <h1 class=" text-transparent text-5xl font-bold bg-gradient-to-r from-sky-600 to-sky-300 bg-clip-text">
                     Tes
                     Tailwind</h1>
-                <h1 class=" text-5xl font-bold mb-4">2024</h1>
+                <h1 class=" text-5xl font-bold mb-4 underline underline-offset-4">2024</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt doloribus repellendus sequi a ea?
                     Hic
                     consectetur quia modi rem. Odio, corrupti. Voluptatum ut laboriosam id, error quas quidem asperiores
@@ -30,6 +85,137 @@
                 <button
                     class="text-white text-semibold bg-sky-500 px-8 py-3 rounded-lg hover:bg-sky-600 active:bg-sky-700">Get
                     Started</button>
+            </div>
+        </div>
+    </section>
+
+    <button
+        class="bg-sky-400 my-10 px-5 py-2 block mx-auto rounded-lg text-white font-semibold hover:bg-sky-500 active:bg-sky-600 focus:ring-sky-300 focus:ring">LEZGO</button>
+
+    <div class="max-w-lg my-10 border-slate-400 rounded-xl shadow-lg mx-auto p-4 hover:bg-slate-500 group">
+        <h5 class="font-bold group-hover:text-white">CARD</h5>
+        <p class="text-slate-600 group-hover:text-white selection:bg-rose-600">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum
+            nobis ratione obcaecati
+            asperiores qui odio
+            sequi neque accusamus unde. Eius dolores placeat libero similique doloremque eveniet eos totam cupiditate
+            pariatur!</p>
+    </div>
+
+    <div class="max-w-lg my-10 rounded-lg shadow-lg mx-auto p-4">
+        <form action="">
+            <label for="email">
+                <span class="mb-1 text-slate-700 after:content-['*'] after:text-rose-500 after:ml-2">Email</span>
+                <input class="px-3 py-2 border w-full rounded-sm shadow focus:outline-none focus:ring focus:ring-sky-500 
+                    invalid:text-rose-500
+                    invalid:focus:ring-rose-500" type="email" placeholder="Masukan Email">
+            </label>
+        </form>
+    </div>
+
+    <section>
+        <div class="container p-4">
+            <h1>SHADOW</h1>
+            <div class="grid grid-cols-3">
+                <div class="shadow-lg border-slate-200/25 border-2 p-4">
+                    TES
+                </div>
+                <div>
+                    <div class="bg-sky-500 bg-blend-screen w-full h-60 object-cover border-8"
+                        style="background-image: url(img/foot.jpg);">
+                        <!-- <div class="w-full h-full bg-rose-500/25 mix-blend-screen"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-4">
+            <div class="grid grid-cols-3 divide-x-2 divide-rose-500 mb-4">
+                <div class="bg-sky-500 p-4"></div>
+                <div class="bg-sky-400 p-4"></div>
+                <div class="bg-sky-300 p-4"></div>
+            </div>
+            <div class="flex flex-col divide-y-2 divide-slate-400/50 divide-dashed">
+                <div class="bg-sky-500 p-4"></div>
+                <div class="bg-sky-400 p-4"></div>
+                <div class="bg-sky-300 p-4"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-4">
+            <h1>TEXT</h1>
+            <p class="capitalize">lorem</p>
+            <p class="uppercase">lorem</p>
+
+            <p class="whitespace-pre-line">
+                TES WHITSPACE
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, corrupti? At atque omnis velit quis
+                dolor libero nihil a, dicta consequatur facere adipisci provident nesciunt officiis quasi sint ullam,
+                quidem, reiciendis illum ad dolorem quo?
+
+                2024
+            </p>
+
+            <div class="bg-origin-content p-4 border-4 border-dashed"
+                style="background-image: url(img/foot.jpg); height: 200px;">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container p-4">
+            <h1>LIST</h1>
+            <div class="bg-sky-500 p-4">
+                <h4>INSIDE</h4>
+                <ul class="list-none list-inside">
+                    <li><i class="fa-solid fa-check mx-1" style="color: white;"></i>lorem</li>
+                    <li><i class="fa-solid fa-check mx-1" style="color: white;"></i>lorem</li>
+                    <li><i class="fa-solid fa-check mx-1" style="color: white;"></i>lorem</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-4">
+            <h1>WIDTH</h1>
+            <div class="flex bg-sky-600 w-full">
+                <div class="w-1/2 bg-sky-300 m-4 flex justify-center items-start p-4">
+                    <p class="line-clamp-2">tes batas baris Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Laboriosam blanditiis,
+                        magni laudantium molestias ipsam possimus voluptates reprehenderit, doloremque natus maxime
+                        accusantium perferendis vero consectetur fugiat itaque modi? Cumque, nostrum doloribus!</p>
+                </div>
+                <div class="w-1/2 bg-sky-300 m-4 h-10 flex flex-col justify-center items-center">
+                    <h4 class="font-serif font-extrabold">Font Serif</h4>
+                    <h4 class="font-mono text-sm">Font Mono</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex justify-around gap-4 w-full bg-sky-800 p-4">
+            <div class="bg-sky-600 h-10 w-10 text-white">01</div>
+            <div class="bg-sky-600 h-10 w-10 text-white">02</div>
+            <div class="bg-sky-600 h-10 w-10 text-white">03</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1>TES GRID</h1>
+            <div class="grid grid-cols-6">
+                <div class="bg-sky-600 h-10 text-white">01</div>
+                <div class="bg-sky-600 h-10 text-white">02</div>
             </div>
         </div>
     </section>
